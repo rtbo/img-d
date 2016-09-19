@@ -1,0 +1,35 @@
+{
+	"name": "img-d",
+	"authors": [ "Remi Thebault" ],
+	"description": "An image library for D",
+	"copyright": "Copyright © 2016, Remi Thebault",
+	"license": "MIT",
+
+    "sourcePaths": [
+        "turbojpeg-d/source",
+        "png-d/source"
+    ],
+    "importPaths": [
+        "turbojpeg-d/source",
+        "png-d/source"
+    ],
+    
+    "sourceFiles-windows-x86-ldc": [
+        "clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+    "sourceFiles-windows-x86-gdc": [
+        "clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+    
+    "sourceFiles-windows-x86_64": [
+        "clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
+        "clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+
+    "buildRequirements": ["allowWarnings"]
+}

@@ -1,0 +1,14 @@
+# dub
+.dub
+docs.json
+__dummy.html
+*.o
+*.obj
+dub.selections.json
+
+# img-d specifics
+libimg-d.a
+img-d.lib
+
+# vscode
+.vscode/*

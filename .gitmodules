@@ -1,0 +1,6 @@
+[submodule "png-d"]
+	path = png-d
+	url = https://github.com/rtbo/libpng.git
+[submodule "turbojpeg-d"]
+	path = turbojpeg-d
+	url = https://github.com/rtbo/jpeg-turbo.git
