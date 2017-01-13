@@ -57,7 +57,7 @@ static if (BITS_IN_JSAMPLE == 8){
  * You can use a signed char by having GETJSAMPLE mask it with 0xFF.
  */
 
-alias ubyte JSAMPLE;
+alias JSAMPLE = ubyte;
 auto GETJSAMPLE(JSAMPLE value) pure @safe nothrow { return cast(int)value; }
 
 enum MAXJSAMPLE		= 255;
@@ -86,7 +86,7 @@ enum CENTERJSAMPLE	= 2048;
  * if you have memory to burn and "short" is really slow.
  */
 
-alias short JCOEF;
+alias JCOEF = short;
 
 
 /* Compressed datastreams are represented as arrays of JOCTET.
@@ -95,7 +95,7 @@ alias short JCOEF;
  * managers, this is also the data type passed to fread/fwrite.
  */
 
-alias ubyte JOCTET;
+alias JOCTET = ubyte;
 auto GETJOCTET(JOCTET value) pure @safe nothrow { return value; }
 
 
@@ -108,19 +108,19 @@ auto GETJOCTET(JOCTET value) pure @safe nothrow { return value; }
 
 /* UINT8 must hold at least the values 0..255. */
 
-alias ubyte UINT8;
+alias UINT8 = ubyte;
 
 /* UINT16 must hold at least the values 0..65535. */
 
-alias ushort UINT16;
+alias UINT16 = ushort;
 
 /* INT16 must hold at least the values -32768..32767. */
 
-alias short INT16;
+alias INT16 = short;
 
 /* INT32 must hold at least signed 32-bit values. */
 
-alias int INT32;
+alias INT32 = int;
 
 /* Datatype used for image dimensions.  The JPEG standard only supports
  * images up to 64K*64K due to 16-bit fields in SOF markers.  Therefore
@@ -129,7 +129,7 @@ alias int INT32;
  * can change this datatype.
  */
 
-alias uint JDIMENSION;
+alias JDIMENSION = uint;
 
 enum JPEG_MAX_DIMENSION  = 65500L;  /* a tad under 64K to prevent overflows */
 
@@ -165,7 +165,7 @@ enum JPEG_MAX_DIMENSION  = 65500L;  /* a tad under 64K to prevent overflows */
  * Defining HAVE_BOOLEAN before including jpeglib.h should make it work.
  */
 
-alias int boolean;
+alias boolean = int;
 enum FALSE	= 0;		/* values of boolean */
 enum TRUE	= 1;
 

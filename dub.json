@@ -31,7 +31,5 @@
         "clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
         "clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
         "clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-
-    "buildRequirements": ["allowWarnings"]
+    ]
 }
