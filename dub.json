@@ -5,15 +5,17 @@
 	"copyright": "Copyright © 2016, Remi Thebault",
 	"license": "MIT",
 
-    "sourcePaths": [
-        "turbojpeg-d/source",
-        "png-d/source"
+    "sourceFiles-linux-x86": [
+        "clibs/i686-pc-linux-gnu/lib/libturbojpeg.a",
+        "clibs/i686-pc-linux-gnu/lib/libjpeg.a",
+        "clibs/i686-pc-linux-gnu/lib/libpng16.a"
     ],
-    "importPaths": [
-        "turbojpeg-d/source",
-        "png-d/source"
+    "sourceFiles-linux-x86_64": [
+        "clibs/x86_64-pc-linux-gnu/lib/libturbojpeg.a",
+        "clibs/x86_64-pc-linux-gnu/lib/libjpeg.a",
+        "clibs/x86_64-pc-linux-gnu/lib/libpng16.a"
     ],
-    
+
     "sourceFiles-windows-x86-ldc": [
         "clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
         "clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
@@ -24,7 +26,7 @@
         "clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
         "clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
     ],
-    
+
     "sourceFiles-windows-x86_64": [
         "clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
         "clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
