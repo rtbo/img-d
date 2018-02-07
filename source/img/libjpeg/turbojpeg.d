@@ -1,4 +1,4 @@
-module libjpeg.turbojpeg;
+module img.libjpeg.turbojpeg;
 /*
  * Copyright (C)2009-2013 D. R. Commander.  All Rights Reserved.
  *
@@ -26,8 +26,8 @@ module libjpeg.turbojpeg;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
- 
+
+
 /**
  * @addtogroup TurboJPEG
  * TurboJPEG API.  This API provides an interface for generating, decoding, and
@@ -88,7 +88,7 @@ enum TJSAMP
  * - 8x8 for no subsampling or grayscale
  * - 16x8 for 4:2:2
  * - 8x16 for 4:4:0
- * - 16x16 for 4:2:0 
+ * - 16x16 for 4:2:0
  */
 immutable(int)[TJ_NUMSAMP] tjMCUWidth  = [8, 16, 16, 8, 8];
 
@@ -98,7 +98,7 @@ immutable(int)[TJ_NUMSAMP] tjMCUWidth  = [8, 16, 16, 8, 8];
  * - 8x8 for no subsampling or grayscale
  * - 16x8 for 4:2:2
  * - 8x16 for 4:4:0
- * - 16x16 for 4:2:0 
+ * - 16x16 for 4:2:0
  */
 immutable(int)[TJ_NUMSAMP] tjMCUHeight = [8, 8, 16, 8, 16];
 
@@ -479,7 +479,7 @@ auto TJPAD(T)(T width) { return (((width)+3)&(~3)); }
 /**
  * Compute the scaled value of <tt>dimension</tt> using the given scaling
  * factor.  This macro performs the integer equivalent of <tt>ceil(dimension *
- * scalingFactor)</tt>. 
+ * scalingFactor)</tt>.
  */
 auto TJSCALED(D, SF)(D dimension, SF scalingFactor) {
     return (dimension * scalingFactor.num + scalingFactor.denom - 1) / scalingFactor.denom;
@@ -832,7 +832,7 @@ int tjDestroy(tjhandle handle);
  * (re)allocation (by setting #TJFLAG_NOREALLOC.)
  *
  * @param bytes the number of bytes to allocate
- * 
+ *
  * @return a pointer to a newly-allocated buffer with the specified number of
  *         bytes
  *

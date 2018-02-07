@@ -1,4 +1,4 @@
-module libpng.png;
+module img.libpng.png;
 /* png.h - header file for PNG reference library
  *
  * libpng version 1.6.16, December 22, 2014
@@ -471,7 +471,7 @@ enum PNG_LIBPNG_VER = 10616; /* 1.6.16 */
     /* If pnglibconf.h is missing, you can
      * copy scripts/pnglibconf.h.prebuilt to pnglibconf.h
      */
-import libpng.pnglibconf;
+import img.libpng.pnglibconf;
 
 static if (PNG_CONVERT_tIME_SUPPORTED){
 import core.stdc.time;
@@ -480,7 +480,7 @@ import core.stdc.time;
 version(PNG_VERSION_INFO_ONLY) {}
 else{
 /* Machine specific configuration. */
-public import libpng.pngconf;
+public import img.libpng.pngconf;
 }
 
 /*

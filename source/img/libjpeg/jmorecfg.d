@@ -1,4 +1,4 @@
-module libjpeg.jmorecfg;
+module img.libjpeg.jmorecfg;
 /*
  * jmorecfg.h
  *

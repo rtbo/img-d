@@ -1,4 +1,4 @@
-module libjpeg.jpeglib;
+module img.libjpeg.jpeglib;
 /*
  * jpeglib.h
  *
@@ -21,8 +21,8 @@ module libjpeg.jpeglib;
  * manual configuration options that most people need not worry about.
  */
 
-import libjpeg.jconfig; /* widely used configuration options */
-import libjpeg.jmorecfg; /* seldom changed options */
+import img.libjpeg.jconfig; /* widely used configuration options */
+import img.libjpeg.jmorecfg; /* seldom changed options */
 
 public:
 extern (C):

@@ -1,4 +1,4 @@
-module libpng.pnglibconf;
+module img.libpng.pnglibconf;
 /* pnglibconf.h - library build configuration */
 
 /* libpng version 1.6.16,December 22, 2014 */
