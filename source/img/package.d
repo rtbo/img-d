@@ -128,23 +128,23 @@ class Image
     /// Stride can be used to pass in a slice of a bigger image.
     this(ubyte[] data, in ImageFormat fmt, in uint width, in size_t stride)
     {
-        immutable height = cast(uint)data.length / stride;
+        const height = data.length / stride;
 
         enforce(data.length >= stride && data.length % stride == 0);
         enforce(width <= 8*stride/fmt.bpp, "image from data: invalid width (bigger than stride)");
 
-        this(data, fmt, width, height, stride);
+        this(data, fmt, width, cast(uint)height, stride);
     }
 
     /// ditto
     immutable this(immutable(ubyte)[] data, in ImageFormat fmt, in uint width, in size_t stride)
     {
-        immutable height = cast(uint)data.length / stride;
+        const height = data.length / stride;
 
         enforce(data.length >= stride && data.length % stride == 0);
         enforce(width <= 8*stride/fmt.bpp, "image from data: invalid width (bigger than stride)");
 
-        this(data, fmt, width, height, stride);
+        this(data, fmt, width, cast(uint)height, stride);
     }
 
     private this(ubyte[] data, ImageFormat format, uint width, uint height,
