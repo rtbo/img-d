@@ -7,8 +7,8 @@ __dummy.html
 dub.selections.json
 
 # img-d specifics
-libimg-d.a
-img-d.lib
+libimg.a
+img.lib
 
 # vscode
 .vscode/*
