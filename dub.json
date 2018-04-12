@@ -10,19 +10,46 @@
     ],
 
     "sourceFiles-windows-x86-ldc": [
-        "clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
     ],
+    "dflags-windows-x86-ldc": [
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+
     "sourceFiles-windows-x86-gdc": [
-        "clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+    "dflags-windows-x86-gdc": [
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+
+    "sourceFiles-windows-x86_mscoff-dmd": [
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+    "dflags-windows-x86_mscoff-dmd": [
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
     ],
 
     "sourceFiles-windows-x86_64": [
-        "clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
-        "clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
+        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
+    ],
+    "dflags-windows-x86_64": [
+        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
+        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
+        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
     ]
 }
