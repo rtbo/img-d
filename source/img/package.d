@@ -723,7 +723,7 @@ private
     {
         auto fmt = checkImgSig(data);
         if (fmt.isNull) return null;
-        return imgIOFromFormat(fmt);
+        return imgIOFromFormat(fmt.get);
     }
 
     ImgIO imgIOFromFormat(in ImageFileFormat format)
