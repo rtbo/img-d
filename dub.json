@@ -5,51 +5,7 @@
 	"copyright": "Copyright © 2016, Remi Thebault",
 	"license": "MIT",
 
-    "libs-linux": [
+    "libs": [
         "turbojpeg", "png16"
-    ],
-
-    "sourceFiles-windows-x86-ldc": [
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-    "dflags-windows-x86-ldc": [
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-
-    "sourceFiles-windows-x86-gdc": [
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-    "dflags-windows-x86-gdc": [
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-
-    "sourceFiles-windows-x86_mscoff-dmd": [
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-    "dflags-windows-x86_mscoff-dmd": [
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/i686-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-
-    "sourceFiles-windows-x86_64": [
-        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
-    ],
-    "dflags-windows-x86_64": [
-        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/turbojpeg-static.lib",
-        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/jpeg-static.lib",
-        "$PACKAGE_DIR/clibs/x86_64-pc-windows-msvc/lib/libpng16_static.lib"
     ]
 }
