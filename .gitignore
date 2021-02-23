@@ -12,3 +12,8 @@ img.lib
 
 # vscode
 .vscode/*
+
+# dopamine
+.dop/
+dop.lock
+use-dop.sh
